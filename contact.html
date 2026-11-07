@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Partner contact — NUMEROLOGIE</title>
-<meta name="description" content="NUMEROLOGIE partner site — French-designed contemporary men's shirts. Selective wholesale partners worldwide.">
+<title>Partner inquiry — NUMEROLOGIE</title>
+<meta name="description" content="Partner inquiry for Numerolog1e. Independent sales representatives, retail buyers, and other wholesale conversations for FW2027. Not a consumer store.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@100;200;300;400;500&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
         <li><a href="mens.html">Men's</a></li>
         <li><a href="lookbook.html">Lookbook</a></li>
         <li><a href="wholesale.html">Wholesale</a></li>
-        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li><a href="contact.html" aria-current="page">Inquiry</a></li>
       </ul>
     </nav>
     <div class="lang-switch" aria-label="Language"><a href="contact.html" aria-current="true" lang="en">EN</a><span aria-hidden="true">|</span><a href="ja/contact.html" lang="ja">日本語</a></div>
@@ -34,9 +34,9 @@
 <main>
   <section class="page-hero">
     <div class="container">
-      <p class="eyebrow">Contact</p>
-      <h1>Partner inquiry</h1>
-      <p class="lead">Tell us about your territory, doors, and how you'd like to work together. Your message opens in your email app, addressed to Eric.</p>
+      <p class="eyebrow">Partner Inquiry</p>
+      <h1>Tell us how you would like to work together</h1>
+      <p class="lead">Sales representatives and retail buyers use this form. Required fields are marked. After a successful submission you will see a confirmation on this page.</p>
     </div>
   </section>
 
@@ -44,48 +44,84 @@
     <div class="container contact-layout">
       <aside class="direct-contact">
         <h2 style="font-size:1.75rem;">Eric Sheng</h2>
-        <p style="color:var(--muted);margin:0.35rem 0 1rem;">Marketing Director · NUMEROLOGIE</p>
+        <p style="color:var(--muted);margin:0.35rem 0 1rem;">Business &amp; operations · NUMEROLOGIE</p>
         <p class="roles-contact" style="margin:0 0 0.25rem;">Contact: <a href="mailto:ericsheng1011@gmail.com">ericsheng1011@gmail.com</a> · Instagram <a href="https://www.instagram.com/numerolog1e/" rel="noopener" target="_blank">@numerolog1e</a></p>
         <div class="roles-block" style="margin-top:1.25rem;">
-          <p class="eyebrow">Founders' roles</p>
-          <p>Cédric Chaudet leads the creative direction of NUMEROLOGIE, from design and collections to the brand's identity. Eric Sheng leads the business side, overseeing market development, production, logistics and shipping, so partners have one clear contact for orders and delivery.</p>
+          <p class="eyebrow">Roles</p>
+          <p>Cédric Chaudet leads the creative direction of NUMEROLOGIE, from design and collections to the brand's identity. Eric Sheng leads business and operations, including market development, production, logistics and shipping.</p>
         </div>
         <div class="feature-media" style="margin-top:1.5rem;">
-          <img src="assets/img/apollon.jpg" alt="NUMEROLOGIE brand visual">
+          <img src="assets/img/apollon.jpg" alt="NUMEROLOGIE shirt Apollon, shown as a brand visual">
         </div>
       </aside>
 
       <div>
-        <form id="partner-inquiry" novalidate>
+        <form id="partner-inquiry" data-lang="en" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+          <input type="hidden" name="subject" value="Partner inquiry — NUMEROLOGIE">
+          <input type="hidden" name="from_name" value="NUMEROLOGIE website">
+          <input type="hidden" name="language" value="English">
+          <div class="hp" aria-hidden="true">
+            <label for="botcheck">Leave this blank</label>
+            <input type="checkbox" id="botcheck" name="botcheck" tabindex="-1" autocomplete="off">
+          </div>
           <div class="form-grid">
+            <div class="form-field full">
+              <label for="inquiry_type">Inquiry type</label>
+              <select id="inquiry_type" name="inquiry_type" required>
+                <option value="" selected>Select…</option>
+                <option value="rep">Independent sales representative</option>
+                <option value="retail">Retail buyer</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="field-error" id="inquiry_type-error"></span>
+            </div>
             <div class="form-field">
-              <label for="name">Name</label>
+              <label for="name">Full name</label>
               <input id="name" name="name" type="text" required autocomplete="name" placeholder="Your name">
+              <span class="field-error" id="name-error"></span>
             </div>
             <div class="form-field">
-              <label for="email">Email</label>
+              <label for="email">Business email</label>
               <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@company.com">
+              <span class="field-error" id="email-error"></span>
             </div>
             <div class="form-field">
-              <label for="company">Company / agency</label>
-              <input id="company" name="company" type="text" autocomplete="organization" placeholder="Showroom, agency, or boutique group">
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text" required autocomplete="organization" placeholder="Showroom, agency, or store">
+              <span class="field-error" id="company-error"></span>
             </div>
             <div class="form-field">
-              <label for="territory">Territory</label>
-              <input id="territory" name="territory" type="text" placeholder="e.g. Europe / Japan / US / Middle East">
+              <label for="territory">Territory or store location</label>
+              <input id="territory" name="territory" type="text" required placeholder="e.g. California">
+              <span class="field-error" id="territory-error"></span>
             </div>
             <div class="form-field">
-              <label for="phone">Phone</label>
-              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="Optional">
+              <label for="brands">Brands represented or store category <span class="optional">(optional)</span></label>
+              <input id="brands" name="brands" type="text" placeholder="Brands you carry, or the type of store">
+            </div>
+            <div class="form-field">
+              <label for="website">Website or LinkedIn <span class="optional">(optional)</span></label>
+              <input id="website" name="website" type="text" inputmode="url" autocomplete="url" placeholder="https://">
             </div>
             <div class="form-field full">
               <label for="message">Message</label>
-              <textarea id="message" name="message" required placeholder="Doors you cover, interest in SS2027 / FW2027, sampling needs, questions on terms…"></textarea>
+              <textarea id="message" name="message" required placeholder="Doors you cover, interest in FW2027, and how you would like to work together."></textarea>
+              <span class="field-error" id="message-error"></span>
+            </div>
+            <div class="form-field full">
+              <label class="consent-label" for="privacy">
+                <input id="privacy" name="privacy" type="checkbox" value="yes" required>
+                <span>I agree that NUMEROLOGIE may use this information to respond to my wholesale or representation inquiry.</span>
+              </label>
+              <span class="field-error" id="privacy-error"></span>
             </div>
           </div>
           <div class="form-actions">
-            <button class="btn btn-primary" type="submit">Open email to Eric</button>
+            <button class="btn btn-primary" type="submit">Send inquiry</button>
+            <p class="form-hint">Required fields are checked before anything is sent.</p>
           </div>
+          <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
         </form>
       </div>
     </div>
@@ -96,18 +132,19 @@
   <div class="container footer-inner">
     <div>
       <div class="footer-brand">NUMEROLOG1E</div>
-      <p class="footer-meta">French-designed contemporary shirts for selective wholesale partners worldwide. Designed in France. Manufactured in China. Global partner development led by Eric Sheng.</p>
+      <p class="footer-meta">French designer menswear since 2018. Approximately 200 retail doors in France. Designed in the South of France. Manufactured in China. Recruiting independent US sales representatives for FW2027. Business and operations led by Eric Sheng.</p>
     </div>
     <nav class="footer-nav" aria-label="Footer">
       <a href="brand.html">Brand</a>
       <a href="mens.html">Men's</a>
       <a href="lookbook.html">Lookbook</a>
       <a href="wholesale.html">Wholesale</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html">Inquiry</a>
     </nav>
     <p class="footer-copy">© NUMEROLOGIE · Partner site · Not a consumer store</p>
   </div>
 </footer>
+<script src="js/form-config.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

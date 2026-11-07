@@ -167,19 +167,19 @@ ul { list-style: none; }
 .hero h1 {
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-weight: 400;
-  font-size: clamp(2.4rem, 5.5vw, 4rem);
+  font-size: clamp(2.4rem, 5.2vw, 3.7rem);
   line-height: 1.12;
   letter-spacing: 0.02em;
   position: relative;
-  max-width: 14ch;
+  max-width: 16ch;
 }
 
 .hero-sub {
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 400;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   color: var(--cream);
-  max-width: 36ch;
+  max-width: 46ch;
   position: relative;
 }
 
@@ -830,6 +830,7 @@ html[lang="ja"] .eyebrow, html[lang="ja"] .hero-kicker { text-transform:none; le
 .hero-tagline { font-family: "Cormorant Garamond", Georgia, serif; font-size: 1.5rem; color: var(--cream); margin: 0 0 .5rem; }
 .hero-tagline .gloss { font-family: inherit; font-size: 1.05rem; opacity: 1; }
 html[lang="ja"] .hero-tagline .gloss { font-family: "Noto Sans JP", sans-serif; font-size: 1rem; }
+html[lang="ja"] .hero h1 { max-width: 12em; font-size: clamp(1.9rem, 4.4vw, 2.85rem); }
 
 /* v3 */
 .page-hero-boxed { background: none; border-bottom: 0; padding-bottom: 0; }
@@ -884,3 +885,109 @@ html[lang="ja"] .hero-tagline .gloss { font-family: "Noto Sans JP", sans-serif; 
 .fw-chip{border:1px solid rgba(255,255,255,.6);color:#fff;padding:.45rem .9rem;font-size:.95rem;font-weight:500;}
 
 @media (max-width:520px){ .ig-figure{max-width:100%;} .ig-split{grid-template-columns:minmax(0,1fr);} }
+
+/* FW2027 recruitment */
+.hero-kicker { max-width: 46ch; line-height: 1.45; }
+.proof-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.15rem 0;
+  list-style: none;
+  margin: 1.35rem 0 0;
+  padding-top: 1.1rem;
+  border-top: 1px solid rgba(255,255,255,0.35);
+}
+.proof-line li { font-weight: 500; letter-spacing: 0.03em; }
+.proof-line li:not(:last-child)::after {
+  content: "·";
+  margin: 0 0.7rem;
+}
+.page-intro p { max-width: 68ch; color: var(--charcoal); font-size: 1.02rem; }
+.page-intro p + p { margin-top: 0.85rem; }
+.archive-banner {
+  margin: 1.15rem 0 0.35rem;
+  padding: 0.95rem 1.05rem;
+  max-width: 68ch;
+  background: #fff;
+  border-left: 3px solid var(--terracotta);
+  color: var(--charcoal);
+  font-weight: 500;
+}
+.audience-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+.audience-card {
+  display: flex;
+  flex-direction: column;
+}
+.audience-card h2 { font-size: clamp(1.55rem, 2.4vw, 2.05rem); }
+.audience-card .btn-row { margin-top: auto; padding-top: 1.15rem; }
+.stack-block + .stack-block { margin-top: 2.4rem; }
+.stack-block .lead + .lead { margin-top: 0.85rem; }
+
+input[type="checkbox"] {
+  width: 1.05rem;
+  height: 1.05rem;
+  padding: 0;
+  accent-color: var(--cobalt-dark);
+  flex-shrink: 0;
+}
+.consent-label {
+  text-transform: none;
+  letter-spacing: 0.01em;
+  font-size: 0.98rem;
+  font-weight: 400;
+  color: var(--charcoal);
+  display: flex;
+  gap: 0.7rem;
+  align-items: flex-start;
+  line-height: 1.5;
+}
+.hp {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.form-field.is-invalid input,
+.form-field.is-invalid textarea,
+.form-field.is-invalid select {
+  border-color: #9a3412;
+}
+.field-error {
+  color: #7a2a10;
+  font-size: 0.88rem;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  font-weight: 500;
+}
+.form-status {
+  margin-top: 1rem;
+  padding: 0.95rem 1rem;
+  border-left: 3px solid var(--cobalt);
+  background: var(--tint);
+  color: var(--charcoal);
+  max-width: 62ch;
+}
+.form-status.is-success { color: #143d22; border-left-color: #1f6b3a; background: #eef6ef; }
+.form-status.is-error { color: #7a2a10; border-left-color: #9a3412; background: #fdf3ee; }
+.btn:disabled { opacity: 0.65; cursor: progress; }
+.optional {
+  text-transform: none;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+.form-grid > .form-field:has(select[required]) > label::after,
+.form-grid > .form-field:has(input[required]:not([type="checkbox"])) > label::after,
+.form-grid > .form-field:has(textarea[required]) > label::after {
+  content: "\00a0*";
+  color: #A9471F;
+}
+@media (max-width: 800px) {
+  .audience-grid { grid-template-columns: 1fr; }
+}
