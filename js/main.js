@@ -54,9 +54,22 @@
     inquiry.value = preset;
   }
 
-  var config = window.NUMEROLOGIE_FORM || {};
   var keyInput = form.elements.namedItem('access_key');
-  if (keyInput && config.accessKey) keyInput.value = config.accessKey;
+
+  function realKey(value) {
+    var key = (value || '').trim();
+    if (!key || key === 'YOUR_WEB3FORMS_ACCESS_KEY' || key.indexOf('YOUR_') === 0) return '';
+    return key;
+  }
+
+  function resolveKey() {
+    var fromConfig = realKey((window.NUMEROLOGIE_FORM || {}).accessKey);
+    if (fromConfig) return fromConfig;
+    return keyInput ? realKey(keyInput.value) : '';
+  }
+
+  var initialKey = resolveKey();
+  if (keyInput && initialKey) keyInput.value = initialKey;
 
   function clearErrors() {
     var invalid = form.querySelectorAll('.is-invalid');
@@ -145,9 +158,8 @@
       return;
     }
 
-    var key = (config.accessKey || '').trim();
-    var placeholder = !key || key === 'YOUR_WEB3FORMS_ACCESS_KEY' || key.indexOf('YOUR_') === 0;
-    if (placeholder) {
+    var key = resolveKey();
+    if (!key) {
       showStatus('error', copy.unconfigured);
       return;
     }
