@@ -1,7 +1,4 @@
-/* Partner inquiry delivery (Web3Forms).
-   Replace YOUR_WEB3FORMS_ACCESS_KEY with the key created for the brand inbox.
-   Until then the contact form validates locally and does not claim a message was sent.
-   Setup steps: README.md → "Partner inquiry form". */
+/* Partner inquiry delivery (Web3Forms) for the brand inbox. */
 window.NUMEROLOGIE_FORM = {
-  accessKey: "YOUR_WEB3FORMS_ACCESS_KEY"
+  accessKey: "16a528ef-8bbb-4715-8070-f4ab50b1c785"
 };
