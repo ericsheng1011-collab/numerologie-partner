@@ -982,6 +982,17 @@ input[type="checkbox"] {
   letter-spacing: 0.02em;
   font-weight: 400;
 }
+.recruit-wrap { padding: clamp(1.25rem, 3vw, 2rem) 0 0; }
+.recruit-callout {
+  background: var(--cobalt);
+  color: var(--cream);
+  padding: clamp(1.5rem, 3.5vw, 2.4rem);
+}
+.recruit-callout .eyebrow { color: #fff; }
+.recruit-callout h2 { color: #fff; margin-bottom: 0.7rem; max-width: 22ch; }
+.recruit-callout p { color: var(--cream); max-width: 68ch; font-size: 1.05rem; }
+html[lang="ja"] .recruit-callout h2 { max-width: none; }
+
 .form-grid > .form-field:has(select[required]) > label::after,
 .form-grid > .form-field:has(input[required]:not([type="checkbox"])) > label::after,
 .form-grid > .form-field:has(textarea[required]) > label::after {
