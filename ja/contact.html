@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>パートナーお問い合わせ — NUMEROLOGIE</title>
-<meta name="description" content="NUMEROLOGIE パートナーサイト — フランスでデザインされたコンテンポラリー・メンズシャツ。世界各地で厳選した卸売パートナーを募集しています。">
+<meta name="description" content="Numerolog1eのパートナーお問い合わせ。独立系セールスレップ、小売バイヤー、その他の卸売に関するご相談（FW2027）。一般向け販売サイトではありません。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@100;200;300;400;500&display=swap" rel="stylesheet">
@@ -34,9 +34,9 @@
 <main>
   <section class="page-hero">
     <div class="container">
-      <p class="eyebrow">お問い合わせ</p>
-      <h1>パートナーお問い合わせ</h1>
-      <p class="lead">担当エリア、取引先店舗、ご希望の協業の形についてお聞かせください。ボタンを押すと、Eric 宛てのメールがお使いのメールアプリで開きます。</p>
+      <p class="eyebrow">パートナーお問い合わせ</p>
+      <h1>ご希望の協業の形をお聞かせください</h1>
+      <p class="lead">セールスレップの方も、小売バイヤーの方も、このフォームからご連絡ください。必須項目には印があります。送信が完了すると、このページに確認メッセージが表示されます。</p>
     </div>
   </section>
 
@@ -44,48 +44,84 @@
     <div class="container contact-layout">
       <aside class="direct-contact">
         <h2 style="font-size:1.75rem;">Eric Sheng</h2>
-        <p style="color:var(--muted);margin:0.35rem 0 1rem;">マーケティングディレクター · NUMEROLOGIE</p>
+        <p style="color:var(--muted);margin:0.35rem 0 1rem;">ビジネスとオペレーション · NUMEROLOGIE</p>
         <p class="roles-contact" style="margin:0 0 0.25rem;">連絡先：<a href="mailto:ericsheng1011@gmail.com">ericsheng1011@gmail.com</a> · Instagram <a href="https://www.instagram.com/numerolog1e/" rel="noopener" target="_blank">@numerolog1e</a></p>
         <div class="roles-block" style="margin-top:1.25rem;">
-          <p class="eyebrow">創業メンバーの役割</p>
-          <p>Cédric Chaudet は、デザインやコレクションからブランドアイデンティティに至るまで、NUMEROLOGIE のクリエイティブディレクションを統括しています。Eric Sheng はビジネス面を担い、市場開拓、生産、物流、出荷までを一貫して管理しています。ご注文から納品まで、パートナーの皆さまの窓口は一本化されています。</p>
+          <p class="eyebrow">役割</p>
+          <p>Cédric Chaudet は、デザインやコレクションからブランドアイデンティティに至るまで、NUMEROLOGIE のクリエイティブディレクションを統括しています。Eric Sheng はビジネスとオペレーションを統括し、市場開拓、生産、物流、出荷を担っています。</p>
         </div>
         <div class="feature-media" style="margin-top:1.5rem;">
-          <img src="../assets/img/apollon.jpg" alt="NUMEROLOGIE ブランドビジュアル">
+          <img src="../assets/img/apollon.jpg" alt="NUMEROLOGIE のシャツ Apollon">
         </div>
       </aside>
 
       <div>
-        <form id="partner-inquiry" novalidate>
+        <form id="partner-inquiry" data-lang="ja" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+          <input type="hidden" name="subject" value="Partner inquiry — NUMEROLOGIE">
+          <input type="hidden" name="from_name" value="NUMEROLOGIE website">
+          <input type="hidden" name="language" value="Japanese">
+          <div class="hp" aria-hidden="true">
+            <label for="botcheck">空欄のままにしてください</label>
+            <input type="checkbox" id="botcheck" name="botcheck" tabindex="-1" autocomplete="off">
+          </div>
           <div class="form-grid">
-            <div class="form-field">
-              <label for="name">お名前</label>
-              <input id="name" name="name" type="text" required autocomplete="name" placeholder="お名前">
+            <div class="form-field full">
+              <label for="inquiry_type">お問い合わせ種別</label>
+              <select id="inquiry_type" name="inquiry_type" required>
+                <option value="" selected>選択してください</option>
+                <option value="rep">独立系セールスレップ</option>
+                <option value="retail">小売バイヤー</option>
+                <option value="other">その他</option>
+              </select>
+              <span class="field-error" id="inquiry_type-error"></span>
             </div>
             <div class="form-field">
-              <label for="email">メールアドレス</label>
+              <label for="name">氏名</label>
+              <input id="name" name="name" type="text" required autocomplete="name" placeholder="氏名">
+              <span class="field-error" id="name-error"></span>
+            </div>
+            <div class="form-field">
+              <label for="email">ビジネスメール</label>
               <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@company.com">
+              <span class="field-error" id="email-error"></span>
             </div>
             <div class="form-field">
-              <label for="company">会社名／代理店名</label>
-              <input id="company" name="company" type="text" autocomplete="organization" placeholder="ショールーム、代理店、ブティックグループなど">
+              <label for="company">会社名</label>
+              <input id="company" name="company" type="text" required autocomplete="organization" placeholder="ショールーム、代理店、店舗名など">
+              <span class="field-error" id="company-error"></span>
             </div>
             <div class="form-field">
-              <label for="territory">エリア</label>
-              <input id="territory" name="territory" type="text" placeholder="例：欧州／日本／米国／中東">
+              <label for="territory">担当エリアまたは店舗所在地</label>
+              <input id="territory" name="territory" type="text" required placeholder="例：カリフォルニア">
+              <span class="field-error" id="territory-error"></span>
             </div>
             <div class="form-field">
-              <label for="phone">電話番号</label>
-              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="任意">
+              <label for="brands">取り扱いブランドまたは店舗カテゴリー <span class="optional">（任意）</span></label>
+              <input id="brands" name="brands" type="text" placeholder="取り扱いブランド、または店舗の種類">
+            </div>
+            <div class="form-field">
+              <label for="website">ウェブサイト / LinkedIn <span class="optional">（任意）</span></label>
+              <input id="website" name="website" type="text" inputmode="url" autocomplete="url" placeholder="https://">
             </div>
             <div class="form-field full">
               <label for="message">メッセージ</label>
-              <textarea id="message" name="message" required placeholder="担当店舗、SS2027／FW2027へのご関心、サンプルのご希望、条件に関するご質問など…"></textarea>
+              <textarea id="message" name="message" required placeholder="担当店舗、FW2027へのご関心、ご希望の協業の形など。"></textarea>
+              <span class="field-error" id="message-error"></span>
+            </div>
+            <div class="form-field full">
+              <label class="consent-label" for="privacy">
+                <input id="privacy" name="privacy" type="checkbox" value="yes" required>
+                <span>NUMEROLOGIEがこの情報を、卸売または代理に関するお問い合わせへの返信に使うことに同意します。</span>
+              </label>
+              <span class="field-error" id="privacy-error"></span>
             </div>
           </div>
           <div class="form-actions">
-            <button class="btn btn-primary" type="submit">Eric 宛てのメールを作成</button>
+            <button class="btn btn-primary" type="submit">送信する</button>
+            <p class="form-hint">必須項目を確認してから送信されます。</p>
           </div>
+          <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
         </form>
       </div>
     </div>
@@ -96,7 +132,7 @@
   <div class="container footer-inner">
     <div>
       <div class="footer-brand">NUMEROLOG1E</div>
-      <p class="footer-meta">世界各地の厳選した卸売パートナーに向けた、フランスデザインのコンテンポラリーシャツ。デザインはフランス、生産は中国。グローバルなパートナー開拓は Eric Sheng が統括しています。</p>
+      <p class="footer-meta">2018年創業のフランスのデザイナーズ・メンズウェア。フランス国内 約200店舗。デザインは南仏、生産は中国。FW2027に向け、米国の独立系セールスレップを募集しています。ビジネスとオペレーションは Eric Sheng が統括しています。</p>
     </div>
     <nav class="footer-nav" aria-label="フッター">
       <a href="brand.html">ブランド</a>
@@ -108,6 +144,7 @@
     <p class="footer-copy">© NUMEROLOGIE · パートナーサイト · 一般向け販売サイトではありません</p>
   </div>
 </footer>
+<script src="../js/form-config.js"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>
