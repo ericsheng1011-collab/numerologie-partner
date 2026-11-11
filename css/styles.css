@@ -22,9 +22,9 @@ html { scroll-behavior: smooth; }
 body {
   background: var(--warm-white);
   color: var(--charcoal);
-  font-family: 'Josefin Sans', system-ui, sans-serif;
+  font-family: 'Inter', system-ui, sans-serif;
   font-weight: 400;
-  line-height: 1.65;
+  line-height: 1.7;
   font-size: 17.5px;
   min-height: 100vh;
   display: flex;
@@ -73,8 +73,8 @@ ul { list-style: none; }
 }
 
 .logo-text {
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  letter-spacing: 0.1em;
+  font-family: 'Bodoni Moda', Georgia, serif;
+  letter-spacing: 0.12em;
   font-size: 0.95rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -88,7 +88,7 @@ ul { list-style: none; }
   padding: 0.45rem 0.7rem;
   font-family: inherit;
   font-size: 0.9rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 500;
   cursor: pointer;
@@ -103,7 +103,7 @@ ul { list-style: none; }
 
 .site-nav a {
   font-size: 0.9rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 500;
   color: var(--muted);
@@ -157,7 +157,7 @@ ul { list-style: none; }
 
 .hero-kicker {
   font-size: 0.9rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 500;
   color: var(--cream);
@@ -165,10 +165,10 @@ ul { list-style: none; }
 }
 
 .hero h1 {
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  font-weight: 400;
+  font-family: 'Bodoni Moda', Georgia, serif;
+  font-weight: 500;
   font-size: clamp(2.4rem, 5.2vw, 3.7rem);
-  line-height: 1.12;
+  line-height: 1.15;
   letter-spacing: 0.02em;
   position: relative;
   max-width: 16ch;
@@ -223,7 +223,7 @@ ul { list-style: none; }
   padding: 0.85rem 1.4rem;
   font-family: inherit;
   font-size: 0.9rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 500;
   border: 1px solid transparent;
@@ -286,7 +286,7 @@ main { flex: 1; }
 
 .eyebrow {
   font-size: 0.9rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 500;
   color: #A9471F;
@@ -297,8 +297,8 @@ main { flex: 1; }
 .section-terracotta .eyebrow { color: var(--cream); }
 
 h2 {
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  font-weight: 400;
+  font-family: 'Bodoni Moda', Georgia, serif;
+  font-weight: 500;
   font-size: clamp(1.9rem, 3.8vw, 2.75rem);
   line-height: 1.15;
   letter-spacing: 0.02em;
@@ -306,8 +306,8 @@ h2 {
 }
 
 h3 {
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  font-weight: 400;
+  font-family: 'Bodoni Moda', Georgia, serif;
+  font-weight: 500;
   font-size: 1.45rem;
   letter-spacing: 0.02em;
   margin-bottom: 0.55rem;
@@ -329,11 +329,11 @@ h3 {
 }
 
 .page-hero h1 {
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  font-weight: 400;
+  font-family: 'Bodoni Moda', Georgia, serif;
+  font-weight: 500;
   font-size: clamp(2.2rem, 4.5vw, 3.4rem);
   letter-spacing: 0.02em;
-  line-height: 1.12;
+  line-height: 1.15;
   margin-bottom: 0.75rem;
 }
 
@@ -368,7 +368,7 @@ h3 {
 .section-sand .card { background: var(--warm-white); }
 
 .card-icon {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Bodoni Moda', Georgia, serif;
   font-size: 1.6rem;
   color: var(--terracotta);
   margin-bottom: 0.65rem;
@@ -395,7 +395,7 @@ h3 {
 }
 
 .stat-value {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Bodoni Moda', Georgia, serif;
   font-size: clamp(1.6rem, 3vw, 2.2rem);
   font-weight: 400;
   line-height: 1.1;
@@ -404,7 +404,7 @@ h3 {
 
 .stat-label {
   font-size: 0.9rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 500;
   color: var(--muted);
@@ -430,7 +430,7 @@ h3 {
 }
 
 .detail-num {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Bodoni Moda', Georgia, serif;
   font-size: 1.5rem;
   color: var(--terracotta);
   line-height: 1;
@@ -478,7 +478,7 @@ h3 {
 .look-meta .style-no {
   font-size: 0.9rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 500;
   color: var(--terracotta);
@@ -520,7 +520,7 @@ h3 {
 }
 
 .step-num {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Bodoni Moda', Georgia, serif;
   font-size: 2rem;
   color: var(--cobalt);
   line-height: 1;
@@ -567,7 +567,7 @@ h3 {
 }
 
 .terms-table th {
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 0.9rem;
@@ -584,7 +584,7 @@ h3 {
 
 .callout strong {
   display: block;
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Bodoni Moda', Georgia, serif;
   font-size: 1.35rem;
   font-weight: 400;
   margin-bottom: 0.4rem;
@@ -611,7 +611,7 @@ h3 {
 
 label {
   font-size: 0.9rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 500;
   color: var(--muted);
@@ -687,8 +687,8 @@ textarea { min-height: 140px; resize: vertical; }
 }
 
 .footer-brand {
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  letter-spacing: 0.1em;
+  font-family: 'Bodoni Moda', Georgia, serif;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 0.95rem;
@@ -709,7 +709,7 @@ textarea { min-height: 140px; resize: vertical; }
 
 .footer-nav a {
   font-size: 0.9rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 500;
   color: var(--muted);
@@ -737,7 +737,7 @@ textarea { min-height: 140px; resize: vertical; }
 
 .chip {
   font-size: 0.9rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 500;
   padding: 0.45rem 0.7rem;
@@ -823,13 +823,21 @@ textarea { min-height: 140px; resize: vertical; }
 .lang-switch a { color: var(--charcoal); text-decoration:none; padding:.15rem .35rem; }
 .lang-switch a[aria-current="true"] { color:#fff; background: var(--cobalt); border-radius:2px; }
 /* Japanese */
-html[lang="ja"] body { font-family: 'Noto Sans JP', 'Josefin Sans', system-ui, sans-serif; font-weight:400; line-height:1.85; letter-spacing:.02em; }
-html[lang="ja"] h1, html[lang="ja"] h2, html[lang="ja"] h3 { font-family: 'Noto Sans JP', 'Cormorant Garamond', serif; font-weight:500; letter-spacing:.02em; }
+html[lang="ja"] body { font-family: 'Inter', 'Noto Sans JP', system-ui, sans-serif; font-weight:400; line-height:1.85; letter-spacing:.02em; }
+html[lang="ja"] h1, html[lang="ja"] h2, html[lang="ja"] h3,
+html[lang="ja"] .fw-big, html[lang="ja"] .bleed-cap, html[lang="ja"] .stat-value,
+html[lang="ja"] .footer-brand, html[lang="ja"] .hero-tagline, html[lang="ja"] .logo-text,
+html[lang="ja"] .step-num, html[lang="ja"] .detail-num, html[lang="ja"] .card-icon,
+html[lang="ja"] .callout strong {
+  font-family: 'Bodoni Moda', 'Shippori Mincho', Georgia, serif;
+  font-weight: 500;
+  letter-spacing: .02em;
+}
 html[lang="ja"] .eyebrow, html[lang="ja"] .hero-kicker { text-transform:none; letter-spacing:.05em; }
 
-.hero-tagline { font-family: "Cormorant Garamond", Georgia, serif; font-size: 1.5rem; color: var(--cream); margin: 0 0 .5rem; }
+.hero-tagline { font-family: "Bodoni Moda", Georgia, serif; font-size: 1.5rem; color: var(--cream); margin: 0 0 .5rem; }
 .hero-tagline .gloss { font-family: inherit; font-size: 1.05rem; opacity: 1; }
-html[lang="ja"] .hero-tagline .gloss { font-family: "Noto Sans JP", sans-serif; font-size: 1rem; }
+html[lang="ja"] .hero-tagline .gloss { font-family: "Inter", "Noto Sans JP", sans-serif; font-size: 1rem; }
 html[lang="ja"] .hero h1 { max-width: 12em; font-size: clamp(1.9rem, 4.4vw, 2.85rem); }
 
 /* v3 */
@@ -865,7 +873,7 @@ html[lang="ja"] .hero h1 { max-width: 12em; font-size: clamp(1.9rem, 4.4vw, 2.85
 .photo-strip { margin-top:2.5rem; }
 .bleed { position:relative; height:min(78vh,760px); overflow:hidden; background:var(--cobalt); }
 .bleed img { width:100%; height:100%; object-fit:cover; object-position:center 25%; display:block; }
-.bleed-cap { position:absolute; left:50%; bottom:2.25rem; transform:translateX(-50%); background:rgba(31,58,104,.88); color:#fff; font-family:'Cormorant Garamond',Georgia,serif; font-size:1.6rem; padding:.5rem 1.25rem; white-space:nowrap; }
+.bleed-cap { position:absolute; left:50%; bottom:2.25rem; transform:translateX(-50%); background:rgba(31,58,104,.88); color:#fff; font-family:'Bodoni Moda',Georgia,serif; font-size:1.6rem; padding:.5rem 1.25rem; white-space:nowrap; }
 .founder-portrait { margin:0; }
 .founder-portrait img { width:100%; height:auto; display:block; border:1px solid var(--line); }
 .serial-feature { display:grid; grid-template-columns:1.2fr .8fr; gap:clamp(2rem,5vw,4rem); align-items:center; }
@@ -878,7 +886,7 @@ html[lang="ja"] .hero h1 { max-width: 12em; font-size: clamp(1.9rem, 4.4vw, 2.85
 @media (max-width:900px){ .photo-grid-5{grid-template-columns:repeat(3,1fr);} }
 @media (max-width:520px){ .photo-grid-5{grid-template-columns:repeat(2,1fr);} }
 
-.fw-block .fw-big{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(4rem,10vw,8rem);line-height:1;color:var(--cream);margin:0 0 .5rem;}
+.fw-block .fw-big{font-family:'Bodoni Moda',Georgia,serif;font-size:clamp(4rem,10vw,8rem);line-height:1;color:var(--cream);margin:0 0 .5rem;}
 .fw-block h2,.fw-block .lead{color:#fff;}
 .fw-block .gloss{font-size:.6em;}
 .fw-chips{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.25rem 0 1.5rem;}

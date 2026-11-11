@@ -4,7 +4,7 @@ English and Japanese (`ja/`) site for wholesale partners and independent sales r
 
 Numerolog1e is a French designer brand from the South of France, founded in 2018, established in approximately 200 French retail doors. The public site is recruiting independent US sales representatives for **FW2027**. **SS2027 is a brand-reference collection. New wholesale orders for SS2027 are closed.**
 
-Designed in the South of France. Manufactured in China. Cédric Chaudet leads creative direction. Eric Sheng leads business and operations. Inquiries: ericsheng1011@gmail.com.
+Designed in the South of France. Cédric Chaudet leads creative direction. Eric Sheng leads business and operations. Inquiries: ericsheng1011@gmail.com.
 
 GitHub Pages publishes this repository from `main` to https://numerolog1e.net/.
 
