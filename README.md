@@ -1,4 +1,4 @@
-# NUMEROLOGIE — Partner site
+# NUMEROLOG1E — Partner site
 
 English and Japanese (`ja/`) site for wholesale partners and independent sales representatives. **Not** a consumer store and not a Shopify storefront.
 
