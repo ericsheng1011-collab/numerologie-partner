@@ -677,6 +677,12 @@ textarea { min-height: 140px; resize: vertical; }
 
 .direct-contact a:hover { border-bottom-color: var(--cobalt); }
 
+.contact-person + .contact-person {
+  margin-top: 1.15rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid var(--line);
+}
+
 /* ── CTA band ── */
 .cta-band {
   padding: clamp(2.5rem, 5vw, 3.75rem) 0;
